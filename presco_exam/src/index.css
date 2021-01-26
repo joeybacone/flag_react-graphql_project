@@ -1,0 +1,35 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 20px;
+  background-color: #283747;
+  color: #fff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  
+  
+}
+@media (min-width: 640px) {
+  .grid{
+      grid-template-columns: repeat(2, 1fr)
+  }
+}
+@media (min-width: 768px) {
+  .grid{
+      grid-template-columns: repeat(3, 1fr)
+  }
+}
+@media (min-width: 992px) {
+  body{
+      padding:50px 100px;
+  }
+  .grid{
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
